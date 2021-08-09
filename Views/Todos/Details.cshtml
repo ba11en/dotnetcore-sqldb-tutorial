@@ -27,7 +27,14 @@
         </dt>
         <dd class="col-sm-10">
             @*@Html.DisplayFor(model => model.Done)*@
-            @{model.Done ? "True" : "False"}
+            @if (Model.Done == true)
+            { 
+                <b>True</b> 
+            }
+            else 
+            {
+                <b>False</b>
+            }            
         </dd>
     </dl>
 </div>
